@@ -473,7 +473,8 @@ p{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-    margin-bottom: 50px;
+  
+    
 }
 .social-list-footer.link{
     display: flex;
@@ -497,8 +498,11 @@ p{
 
 }
 
-.section-social{
+.section-join{
     margin-left: 70px;
+}
+.section-social{
+    margin-top: 20px;
 }
 
 
