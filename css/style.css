@@ -428,6 +428,10 @@ p{
     fill: var(--accent-color);
 
 }
+.footer-icon{
+    fill: #FFFFFF;
+    
+}
 
 
 /* ================== footer for index.html ================ */
