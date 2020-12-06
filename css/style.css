@@ -138,9 +138,15 @@ p{
     letter-spacing: 0.02em;
 }
 .auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav .link:focus{
    color:var(--accent-color);
 }
+
+.auth-nav .link:hover .header-icon,
+.auth-nav .link:focus .header-icon{
+   fill:var(--accent-color);
+}
+
 
 .auth-nav.list{
     display: flex;
@@ -155,9 +161,11 @@ p{
 }
 
 .header-icon{
-    display: flex;
-    align-items: center;
+    fill: var(--secondary-text-color);
+    margin-right: 10px;
 }
+
+
 /* ====================== main for index.html ==================*/
 
 /* section */
@@ -383,6 +391,8 @@ p{
     justify-content: space-between;
 }
 
+/* clients */
+
 .section.clients{
     padding-top: 94px;
 }
@@ -407,17 +417,19 @@ p{
 }
 
 
+.clients-item:hover,
+.clients-item:focus {
+    border: 1px solid var(--accent-color);
 
-.clients-link:hover .icon,
-.clients-link:focus .icon{
+} 
+
+.clients-item:hover .icon,
+.clients-item:focus .icon{
     fill: var(--accent-color);
 
 }
-.clients-item:hover,
-.clients-item:focus{
-    border: 1px solid var(--accent-color);
 
-}
+
 /* ================== footer for index.html ================ */
 
 .address {
@@ -464,17 +476,16 @@ p{
 
 .section-footer{
     display: flex;
+    align-items: baseline;
 }
 
-.social-title{
+.join-title{
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-  
-    
 }
 .social-list-footer.link{
     display: flex;
@@ -501,10 +512,10 @@ p{
 .section-join{
     margin-left: 70px;
 }
-.section-social{
+
+.social-list.list{
     margin-top: 20px;
 }
-
 
 /* ======================style for portfolio.html ==================*/
 
